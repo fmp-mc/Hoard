@@ -1,0 +1,9 @@
+Hoard for BME (Bare Metal Environment)
+- no exceptions
+- no rtti
+
+Build for TILE-Gx:
+CXX=tile-g++48 make bare-metal
+
+see hoardconstants.h for limits ===> MATTERS!
+for thread-safe inside func (e.g. malloc), override newlib ones
